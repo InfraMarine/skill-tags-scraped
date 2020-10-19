@@ -18,5 +18,6 @@ RUN pip install --no-cache-dir -r requirements.txt \
 EXPOSE 5000
 
 CMD python ./api/main.py \
+	&& python scrape_n_fill.py \
 	&& cron \
 	&& tail -f /var/log/cron.log

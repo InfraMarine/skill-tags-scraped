@@ -1,2 +1,2 @@
-0 */12 * * * python scrape_n_fill.py
+0 */12 * * * python scrape_n_fill.py >> /var/log/cron.log 2>&1
 # min hour day month weekday
